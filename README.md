@@ -1,6 +1,8 @@
 # transparent-voter-list
+
 We have no secrets.
 
+```mermaid
 flowchart LR
     B["Backend<br/>Verifies eligibility<br/>Maintains voter list<br/>(names, IDs, status) off-chain"]
 
@@ -20,14 +22,15 @@ flowchart LR
     P -.->|"Returns Merkle proof"| R
     BC -.->|"4. Fetches public root"| R
 
-    classDef backend fill:#EAF3FF,stroke:#3399FF,color:#172B4D,stroke-width:1.5px
-    classDef merkle fill:#E8F8EF,stroke:#2DB875,color:#173D2B,stroke-width:1.5px
-    classDef blockchain fill:#F1EAFE,stroke:#9163E8,color:#302052,stroke-width:1.5px
-    classDef citizen fill:#FFF5DF,stroke:#FFB52E,color:#4D3510,stroke-width:1.5px
-    classDef result fill:#E8F8EF,stroke:#2DB875,color:#173D2B,stroke-width:1.5px
+    classDef backend fill:#EAF3FF,stroke:#3399FF,color:#172B4D
+    classDef merkle fill:#E8F8EF,stroke:#2DB875,color:#173D2B
+    classDef blockchain fill:#F1EAFE,stroke:#9163E8,color:#302052
+    classDef citizen fill:#FFF5DF,stroke:#FFB52E,color:#4D3510
+    classDef result fill:#E8F8EF,stroke:#2DB875,color:#173D2B
 
     class B,P backend
     class M merkle
     class BC blockchain
     class C citizen
     class R result
+```
