@@ -1,7 +1,6 @@
 # Transparent Voter List
 
-"We have no secrets."
-- Gandhi
+"We have no secrets." - Gandhi
 
 ```mermaid
 flowchart LR
